@@ -5,18 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using FantasyBaseballAnalyticsAPI.Biz.Interfaces.MLB.Stats;
 using FantasyBaseballAnalyticsAPI.Biz.Interfaces.MLB.LeagueStructure;
+using FantasyBaseballAnalyticsAPI.Biz.Enumerators;
 
 namespace Dynasty.Domain.Interfaces.MLB
 {
-    interface IPlayerRepository
+    interface IPlayer
     {
         int PlayerID { get; set; }
-        DateTime Birthdate { get; set; }
         int Age { get; }
-
-        string FirstName { get; set; }
-        string LastName { get; set; }
-        string FullName { get; }
+        
+        string Name { get; }
+        eBattingStance Batting { get; }
+        eThrowingHand Throwing { get; }
+        IList<ePosition> Positions { get; }
 
         List<IPlayerStats<IStat>> Stats { get; }
 

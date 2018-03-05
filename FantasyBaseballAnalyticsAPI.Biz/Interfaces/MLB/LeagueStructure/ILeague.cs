@@ -1,5 +1,4 @@
-﻿using Dynasty.Domain.Enumerators;
-using FantasyBaseballAnalyticsAPI.Biz.Interfaces.MLB.LeagueStructure;
+﻿using FantasyBaseballAnalyticsAPI.Biz.Interfaces.MLB.LeagueStructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;

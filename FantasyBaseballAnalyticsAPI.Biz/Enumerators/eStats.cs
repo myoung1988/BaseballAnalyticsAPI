@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dynasty.Domain.Enumerators
+namespace FantasyBaseballAnalyticsAPI.Biz.Enumerators
 {
-    public enum UserRole
+    public enum eEvaluation
     {
-        SiteAdmin = 1,
-        LeagueOwner = 2,
-        TeamOwner = 3
+        GreaterThan = '>',
+        LessThan = '<'
     }
-
-
 }

@@ -8,8 +8,11 @@ namespace Dynasty.Domain.Interfaces.MLB
 {
     interface IPlayerStats<IStat>
     {
-        DateTime Date { get; set; }
-        string Season { get; set; }
+        /// <summary>
+        /// Stats are stored by month rather than by day to avoid just data sets for now.
+        /// </summary>
+        short MonthId { get; set; }
+        short SeasonId { get; set; }
         IStat Stat { get; set; }
     }
 }

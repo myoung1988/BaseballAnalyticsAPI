@@ -1,9 +1,4 @@
-﻿using Dynasty.Domain.Enumerators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FantasyBaseballAnalyticsAPI.Biz.Enumerators;
 
 namespace FantasyBaseballAnalyticsAPI.Biz.Interfaces.MLB.Stats
 {
@@ -12,7 +7,7 @@ namespace FantasyBaseballAnalyticsAPI.Biz.Interfaces.MLB.Stats
         int StatID { get; }
         string Name { get; }
         object Value { get; set; }
-        Evaluation Eval { get; }
+        eEvaluation Eval { get; }
 
         bool Compare(object val1, object val2);
     }

@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dynasty.Domain.Enumerators
+namespace FantasyBaseballAnalyticsAPI.Biz.Enumerators
 {
-    public enum BattingStance
+    public enum eBattingStance
     {
         RightHanded = 'R',
         LeftHanded = 'L',
         Switch = 'S'
     }
 
-    public enum ThrowingHand
+    public enum eThrowingHand
     {
         RightHanded = 'R',
         LeftHanded = 'L',
